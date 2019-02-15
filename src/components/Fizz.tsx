@@ -1,7 +1,5 @@
-import React from 'react';
+import React from "react";
 
-const FizzView = () => (
-    <div>Fizz</div>
-);
+const FizzView = () => <div>Fizz</div>;
 
 export default FizzView;

@@ -7,12 +7,14 @@
     "@types/node": "11.9.4",
     "@types/react": "16.8.3",
     "@types/react-dom": "16.8.1",
-    "enzyme": "^3.8.0",
-    "enzyme-adapter-react-16": "^1.9.1",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-scripts": "2.1.5",
     "typescript": "3.3.3"
+  },
+  "devDependencies": {
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.9.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 // Components
 import Fizz from "./components/Fizz";
@@ -7,17 +7,16 @@ import FizzBuzz from "./components/FizzBuzz";
 import Hoc from "./components/Hoc";
 
 // Assets
-import logo from './logo.svg';
+import logo from "./logo.svg";
 
 // Styles
-import './App.css';
-
+import "./App.css";
 
 class App extends Component {
   state = {
-    inputValue: '',
-    number: ''
-  }
+    inputValue: "",
+    number: ""
+  };
 
   // Component Functions
   _renderFizzBuzz = () => {
@@ -31,22 +30,30 @@ class App extends Component {
     }
 
     return arr.map((Item, index) => <Item key={index} />);
-  }
-  
+  };
+
   render() {
     const { inputValue } = this.state;
-    
+
     return (
       <div className="App">
         <header className="App-header">
-        <div className="form">
-          <span>Limit : </span>
-          <input type="number" value={inputValue} onChange={e => this.setState({ inputValue: e.target.value ? parseInt(e.target.value) : '' })}></input>
-          <button onClick={() => this.setState({ number: inputValue})}>Submit</button>
-          <div className="content">
-            {this._renderFizzBuzz()}
+          <div className="form">
+            <span>Limit : </span>
+            <input
+              type="number"
+              value={inputValue}
+              onChange={e =>
+                this.setState({
+                  inputValue: e.target.value ? parseInt(e.target.value) : ""
+                })
+              }
+            />
+            <button onClick={() => this.setState({ number: inputValue })}>
+              Submit
+            </button>
+            <div className="content">{this._renderFizzBuzz()}</div>
           </div>
-        </div>
         </header>
       </div>
     );

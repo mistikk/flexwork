@@ -1,7 +1,5 @@
-import React from 'react';
+import React from "react";
 
-const BuzzView = () => (
-    <div>Buzz</div>
-);
+const BuzzView = () => <div>Buzz</div>;
 
 export default BuzzView;
